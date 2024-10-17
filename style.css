@@ -1,0 +1,36 @@
+:root {
+    --padding: 2rem;
+    --padding-s: 0.5rem;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    max-width: calc(100vw - (var(--padding)*2)); 
+    height: calc(100vh - (var(--padding)*2));
+
+    padding: var(--padding);
+
+    font-family: "Noto Sans", sans-serif;
+    font-size: 12pt;
+    line-height: 150%;
+
+    display: grid;
+    gap: var(--padding);
+}
+
+.statistics {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+}
+
+.graph {
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+}
